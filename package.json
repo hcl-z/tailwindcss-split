@@ -1,0 +1,63 @@
+{
+  "name": "tailwindcss-split",
+  "version": "1.0.0",
+  "description": "A tool for splitting and optimizing Tailwind CSS styles, generating separate CSS files for components or pages to improve performance and maintainability.",
+  "author": "hcl-z 1401859664@qq.com",
+  "license": "MIT",
+  "homepage": "https://github.com/hcl-z/tailwindcss-split",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcl-z/tailwindcss-split.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hcl-z/tailwindcss-split/issues",
+    "email": "1401859664@qq.com"
+  },
+  "keywords": [
+    "css",
+    "generate",
+    "tailwindcss",
+    "split"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "tws": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "release": "bumpp",
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.44",
+    "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "commander": "^12.1.0",
+    "postcss": "^8.4.44",
+    "tailwindcss": "^3.4.10",
+    "unconfig": "^0.5.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.0.0",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.5.2",
+    "bumpp": "^9.4.1",
+    "chalk": "4.0.0",
+    "cssnano": "^7.0.5",
+    "eslint": "^9.9.1",
+    "minimist": "^1.2.8",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vitest": "^0.34.4"
+  }
+}
